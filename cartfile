@@ -2,5 +2,5 @@ github "Moya/Moya"
 github "Alamofire/Alamofire" ~> 4.7
 github "ReactiveX/RxSwift" ~> 4.0
 github "tristanhimmelman/ObjectMapper" ~> 3.4
-github "RxSwiftCommunity/RxFlow"
 github "SDWebImage/SDWebImage"
+github "SVProgressHUD/SVProgressHUD"
