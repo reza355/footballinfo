@@ -38,6 +38,14 @@
 		60E7E03621BE4BE8002B7076 /* Reuseidentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03521BE4BE8002B7076 /* Reuseidentifier.swift */; };
 		60E7E03A21BE4C68002B7076 /* TeamLogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03821BE4C68002B7076 /* TeamLogoCell.swift */; };
 		60E7E03B21BE4C68002B7076 /* TeamLogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */; };
+		60E7E03E21BE7136002B7076 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03C21BE7136002B7076 /* TeamDetailViewController.swift */; };
+		60E7E03F21BE7136002B7076 /* TeamDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60E7E03D21BE7136002B7076 /* TeamDetailViewController.xib */; };
+		60E7E04521BE8A91002B7076 /* TeamFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04421BE8A91002B7076 /* TeamFlowController.swift */; };
+		60E7E04721BE9027002B7076 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04621BE9027002B7076 /* FlowController.swift */; };
+		60E7E04A21BE9081002B7076 /* NavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04921BE9081002B7076 /* NavigationScreen.swift */; };
+		60E7E04C21BE90D5002B7076 /* UINavigationController+TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04B21BE90D5002B7076 /* UINavigationController+TransitionDelegate.swift */; };
+		60E7E04E21BE9341002B7076 /* RootFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04D21BE9341002B7076 /* RootFlowController.swift */; };
+		60E7E05021BE9B7A002B7076 /* TeamDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E04F21BE9B7A002B7076 /* TeamDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +82,14 @@
 		60E7E03521BE4BE8002B7076 /* Reuseidentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseidentifier.swift; sourceTree = "<group>"; };
 		60E7E03821BE4C68002B7076 /* TeamLogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLogoCell.swift; sourceTree = "<group>"; };
 		60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamLogoCell.xib; sourceTree = "<group>"; };
+		60E7E03C21BE7136002B7076 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		60E7E03D21BE7136002B7076 /* TeamDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamDetailViewController.xib; sourceTree = "<group>"; };
+		60E7E04421BE8A91002B7076 /* TeamFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFlowController.swift; sourceTree = "<group>"; };
+		60E7E04621BE9027002B7076 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		60E7E04921BE9081002B7076 /* NavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreen.swift; sourceTree = "<group>"; };
+		60E7E04B21BE90D5002B7076 /* UINavigationController+TransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+TransitionDelegate.swift"; sourceTree = "<group>"; };
+		60E7E04D21BE9341002B7076 /* RootFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowController.swift; sourceTree = "<group>"; };
+		60E7E04F21BE9B7A002B7076 /* TeamDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +148,7 @@
 				603A3ACA21BBDD31000AC86D /* ViewModels */,
 				603A3AC921BBDD28000AC86D /* ViewControllers */,
 				603A3AD821BC1067000AC86D /* MoyaTarget */,
+				60E7E04221BE8A3E002B7076 /* Reusables */,
 			);
 			path = TeamList;
 			sourceTree = "<group>";
@@ -141,6 +158,8 @@
 			children = (
 				603A3ACC21BBDE13000AC86D /* TeamListsViewController.swift */,
 				603A3ACD21BBDE13000AC86D /* TeamListsViewController.xib */,
+				60E7E03C21BE7136002B7076 /* TeamDetailViewController.swift */,
+				60E7E03D21BE7136002B7076 /* TeamDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -150,6 +169,7 @@
 			children = (
 				601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */,
 				601CF6CD21BE381100CAD5D3 /* TeamLogoCellViewModel.swift */,
+				60E7E04F21BE9B7A002B7076 /* TeamDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +303,7 @@
 		60E7E02E21BE4AAB002B7076 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				60E7E04821BE9061002B7076 /* FlowController */,
 				60E7E02F21BE4AD2002B7076 /* UICollectionView */,
 			);
 			path = UIKit;
@@ -312,6 +333,33 @@
 				60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		60E7E04221BE8A3E002B7076 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E04321BE8A7A002B7076 /* FlowControllers */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		60E7E04321BE8A7A002B7076 /* FlowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E04421BE8A91002B7076 /* TeamFlowController.swift */,
+			);
+			path = FlowControllers;
+			sourceTree = "<group>";
+		};
+		60E7E04821BE9061002B7076 /* FlowController */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E04621BE9027002B7076 /* FlowController.swift */,
+				60E7E04921BE9081002B7076 /* NavigationScreen.swift */,
+				60E7E04B21BE90D5002B7076 /* UINavigationController+TransitionDelegate.swift */,
+				60E7E04D21BE9341002B7076 /* RootFlowController.swift */,
+			);
+			path = FlowController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +425,7 @@
 				60E7E03B21BE4C68002B7076 /* TeamLogoCell.xib in Resources */,
 				603A3ACF21BBDE13000AC86D /* TeamListsViewController.xib in Resources */,
 				609051C821B6EB4B006E3F26 /* Assets.xcassets in Resources */,
+				60E7E03F21BE7136002B7076 /* TeamDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +451,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxFlow.framework",
 			);
 			name = "Copy Carthage Framework";
 			outputPaths = (
@@ -418,18 +468,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				601CF6CA21BE1B8B00CAD5D3 /* TeamListsViewModel.swift in Sources */,
+				60E7E04521BE8A91002B7076 /* TeamFlowController.swift in Sources */,
 				60E7E03621BE4BE8002B7076 /* Reuseidentifier.swift in Sources */,
+				60E7E03E21BE7136002B7076 /* TeamDetailViewController.swift in Sources */,
 				601CF6C421BE0B5900CAD5D3 /* Mappable + ServerResponse.swift in Sources */,
 				603A3AD421BC086A000AC86D /* RxMoya + Request.swift in Sources */,
+				60E7E04A21BE9081002B7076 /* NavigationScreen.swift in Sources */,
 				609051C121B6EB49006E3F26 /* AppDelegate.swift in Sources */,
+				60E7E04E21BE9341002B7076 /* RootFlowController.swift in Sources */,
 				603A3ACE21BBDE13000AC86D /* TeamListsViewController.swift in Sources */,
 				601CF6CC21BE1C5900CAD5D3 /* TeamListsCacheModel.swift in Sources */,
 				60780E6221BE03B600902546 /* FootballTeam.swift in Sources */,
 				60E7E03121BE4AEB002B7076 /* CollectionView+Register.swift in Sources */,
+				60E7E04721BE9027002B7076 /* FlowController.swift in Sources */,
 				601CF6C821BE0CA100CAD5D3 /* OptionalType.swift in Sources */,
 				60E7E03321BE4B2A002B7076 /* UIKit+Dequequreusable.swift in Sources */,
+				60E7E05021BE9B7A002B7076 /* TeamDetailViewModel.swift in Sources */,
 				603A3ADA21BC1092000AC86D /* TeamListsMoyaTarget.swift in Sources */,
 				60E7E03A21BE4C68002B7076 /* TeamLogoCell.swift in Sources */,
+				60E7E04C21BE90D5002B7076 /* UINavigationController+TransitionDelegate.swift in Sources */,
 				603A3ADE21BC1B8B000AC86D /* TeamListsNetworkModel.swift in Sources */,
 				601CF6CE21BE381100CAD5D3 /* TeamLogoCellViewModel.swift in Sources */,
 			);
