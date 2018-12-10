@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+extension UICollectionView {
+	
+	func register<T: UICollectionViewCell>(collectionViewCell: T.Type) {
+		
+		register(T.nib, forCellWithReuseIdentifier: T.reuseIdentifier)
+	}
+}
