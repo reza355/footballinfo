@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601CF6C421BE0B5900CAD5D3 /* Mappable + ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6C321BE0B5900CAD5D3 /* Mappable + ServerResponse.swift */; };
+		601CF6C821BE0CA100CAD5D3 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6C721BE0CA100CAD5D3 /* OptionalType.swift */; };
+		601CF6CA21BE1B8B00CAD5D3 /* TeamListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */; };
+		601CF6CC21BE1C5900CAD5D3 /* TeamListsCacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6CB21BE1C5900CAD5D3 /* TeamListsCacheModel.swift */; };
 		603A3AC721BBDA28000AC86D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603A3AC621BBDA28000AC86D /* Result.framework */; };
 		603A3ACE21BBDE13000AC86D /* TeamListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A3ACC21BBDE13000AC86D /* TeamListsViewController.swift */; };
 		603A3ACF21BBDE13000AC86D /* TeamListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603A3ACD21BBDE13000AC86D /* TeamListsViewController.xib */; };
 		603A3AD421BC086A000AC86D /* RxMoya + Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A3AD321BC086A000AC86D /* RxMoya + Request.swift */; };
+		603A3ADA21BC1092000AC86D /* TeamListsMoyaTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A3AD921BC1092000AC86D /* TeamListsMoyaTarget.swift */; };
+		603A3ADE21BC1B8B000AC86D /* TeamListsNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A3ADD21BC1B8B000AC86D /* TeamListsNetworkModel.swift */; };
+		60780E6221BE03B600902546 /* FootballTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60780E6121BE03B600902546 /* FootballTeam.swift */; };
 		609051C121B6EB49006E3F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609051C021B6EB49006E3F26 /* AppDelegate.swift */; };
 		609051C821B6EB4B006E3F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609051C721B6EB4B006E3F26 /* Assets.xcassets */; };
 		609051CB21B6EB4B006E3F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609051C921B6EB4B006E3F26 /* LaunchScreen.storyboard */; };
@@ -28,10 +35,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601CF6C321BE0B5900CAD5D3 /* Mappable + ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mappable + ServerResponse.swift"; sourceTree = "<group>"; };
+		601CF6C721BE0CA100CAD5D3 /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsViewModel.swift; sourceTree = "<group>"; };
+		601CF6CB21BE1C5900CAD5D3 /* TeamListsCacheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsCacheModel.swift; sourceTree = "<group>"; };
 		603A3AC621BBDA28000AC86D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 		603A3ACC21BBDE13000AC86D /* TeamListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsViewController.swift; sourceTree = "<group>"; };
 		603A3ACD21BBDE13000AC86D /* TeamListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamListsViewController.xib; sourceTree = "<group>"; };
 		603A3AD321BC086A000AC86D /* RxMoya + Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxMoya + Request.swift"; sourceTree = "<group>"; };
+		603A3AD921BC1092000AC86D /* TeamListsMoyaTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsMoyaTarget.swift; sourceTree = "<group>"; };
+		603A3ADD21BC1B8B000AC86D /* TeamListsNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsNetworkModel.swift; sourceTree = "<group>"; };
+		60780E6121BE03B600902546 /* FootballTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeam.swift; sourceTree = "<group>"; };
 		609051BD21B6EB49006E3F26 /* FootballInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		609051C021B6EB49006E3F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		609051C721B6EB4B006E3F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,12 +87,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601CF6C221BE0B3800CAD5D3 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				601CF6C321BE0B5900CAD5D3 /* Mappable + ServerResponse.swift */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		601CF6C521BE0C7C00CAD5D3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				601CF6C621BE0C8500CAD5D3 /* Optional */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		601CF6C621BE0C8500CAD5D3 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				601CF6C721BE0CA100CAD5D3 /* OptionalType.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
 		603A3AC821BBDD13000AC86D /* TeamList */ = {
 			isa = PBXGroup;
 			children = (
+				603A3ADF21BC1C1A000AC86D /* Entities */,
 				603A3ACB21BBDD51000AC86D /* Models */,
 				603A3ACA21BBDD31000AC86D /* ViewModels */,
 				603A3AC921BBDD28000AC86D /* ViewControllers */,
+				603A3AD821BC1067000AC86D /* MoyaTarget */,
 			);
 			path = TeamList;
 			sourceTree = "<group>";
@@ -95,6 +135,7 @@
 		603A3ACA21BBDD31000AC86D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -102,6 +143,8 @@
 		603A3ACB21BBDD51000AC86D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				603A3ADD21BC1B8B000AC86D /* TeamListsNetworkModel.swift */,
+				601CF6CB21BE1C5900CAD5D3 /* TeamListsCacheModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +152,7 @@
 		603A3AD021BC0777000AC86D /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				601CF6C521BE0C7C00CAD5D3 /* Foundation */,
 				603A3AD121BC078E000AC86D /* Extension */,
 			);
 			path = Reusables;
@@ -117,6 +161,7 @@
 		603A3AD121BC078E000AC86D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				601CF6C221BE0B3800CAD5D3 /* ObjectMapper */,
 				603A3AD221BC0794000AC86D /* Moya */,
 			);
 			path = Extension;
@@ -128,6 +173,22 @@
 				603A3AD321BC086A000AC86D /* RxMoya + Request.swift */,
 			);
 			path = Moya;
+			sourceTree = "<group>";
+		};
+		603A3AD821BC1067000AC86D /* MoyaTarget */ = {
+			isa = PBXGroup;
+			children = (
+				603A3AD921BC1092000AC86D /* TeamListsMoyaTarget.swift */,
+			);
+			path = MoyaTarget;
+			sourceTree = "<group>";
+		};
+		603A3ADF21BC1C1A000AC86D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				60780E6121BE03B600902546 /* FootballTeam.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		609051B421B6EB49006E3F26 = {
@@ -150,8 +211,8 @@
 		609051BF21B6EB49006E3F26 /* FootballInfo */ = {
 			isa = PBXGroup;
 			children = (
-				603A3AD021BC0777000AC86D /* Reusables */,
 				603A3AC821BBDD13000AC86D /* TeamList */,
+				603A3AD021BC0777000AC86D /* Reusables */,
 				609051D221B6EB63006E3F26 /* SupportedFiles */,
 				609051C721B6EB4B006E3F26 /* Assets.xcassets */,
 			);
@@ -276,8 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
@@ -294,8 +353,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = "Copy Carthage Framework";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,9 +366,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601CF6CA21BE1B8B00CAD5D3 /* TeamListsViewModel.swift in Sources */,
+				601CF6C421BE0B5900CAD5D3 /* Mappable + ServerResponse.swift in Sources */,
 				603A3AD421BC086A000AC86D /* RxMoya + Request.swift in Sources */,
 				609051C121B6EB49006E3F26 /* AppDelegate.swift in Sources */,
 				603A3ACE21BBDE13000AC86D /* TeamListsViewController.swift in Sources */,
+				601CF6CC21BE1C5900CAD5D3 /* TeamListsCacheModel.swift in Sources */,
+				60780E6221BE03B600902546 /* FootballTeam.swift in Sources */,
+				601CF6C821BE0CA100CAD5D3 /* OptionalType.swift in Sources */,
+				603A3ADA21BC1092000AC86D /* TeamListsMoyaTarget.swift in Sources */,
+				603A3ADE21BC1B8B000AC86D /* TeamListsNetworkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
