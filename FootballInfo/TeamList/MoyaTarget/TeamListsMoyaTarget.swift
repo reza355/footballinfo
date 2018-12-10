@@ -27,7 +27,7 @@ extension TeamListsMoyaTarget: TargetType {
 	var path: String {
 		switch self {
 		case .getTeamLists:
-			return "/search_all_leagues.php"
+			return "/search_all_teams.php"
 		}
 	}
 	
@@ -45,7 +45,7 @@ extension TeamListsMoyaTarget: TargetType {
 	var parameters: [String: Any] {
 		switch self {
 		default:
-			return ["c":"England"]
+			return ["l":"English Premier League"]
 		}
 	}
 	

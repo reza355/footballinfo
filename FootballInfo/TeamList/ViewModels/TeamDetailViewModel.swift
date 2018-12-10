@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import RxSwift
+
+final class TeamDetailViewModel {
+	
+	var teamDetail: Variable<FootballTeam>
+	
+	init(team: FootballTeam) {
+		
+		self.teamDetail = Variable<FootballTeam>(team)
+	}
+}

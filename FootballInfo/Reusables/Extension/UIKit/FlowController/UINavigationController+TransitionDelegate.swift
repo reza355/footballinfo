@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+extension UINavigationController: UINavigationControllerDelegate {
+	
+	// MARK: - Public methods
+	
+	func push(viewController: UIViewController, animated: Bool) {
+		pushViewController(viewController, animated: animated)
+	}
+	
+	func pop(animated: Bool) {
+		popViewController(animated: animated)
+	}
+}

@@ -18,7 +18,7 @@ final class TeamListsNetworkModel {
 	func getTeamLists() -> Observable<[FootballTeam]> {
 		
 		return provider.requestWithValidation(.getTeamLists)
-			.mapResponseArray(to: FootballTeam.self, keyPath: "countrys")
+			.mapResponseArray(to: FootballTeam.self, keyPath: "teams")
 			.flatMapForServerResponse()
 	}
 }

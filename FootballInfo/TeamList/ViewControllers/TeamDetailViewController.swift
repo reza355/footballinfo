@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import RxSwift
 
-class TeamDetailViewController: UIViewController {
+final class TeamDetailViewController: UIViewController {
+	
+	@IBOutlet private var formedYear: UILabel!
+	@IBOutlet private var stadiumName: UILabel!
+	@IBOutlet private var desc: UITextView!
+	
+	private var viewModel: TeamDetailViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		bindViewModel()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	
+	convenience init(viewModel: TeamDetailViewModel) {
+		self.init()
+		
+		self.viewModel = viewModel
+	}
+	
+	
+	private func bindViewModel() {
+		
+		viewModel?.teamDetail.asObservable()
+			.observeOn(MainScheduler.instance)
+			.subscribe(onNext: { [weak self] (team: FootballTeam) in
+				
+				self?.formedYear.text = team.formedYear
+				self?.stadiumName.text = team.stadiumName
+				self?.desc.text = team.teamDescription
+			})
+			.disposed(by: disposeBag)
+	}
 }

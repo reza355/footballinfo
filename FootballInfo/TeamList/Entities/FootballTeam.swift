@@ -1,5 +1,5 @@
 //
-//  SoccerTeam.swift
+//  FootballTeam.swift
 //  FootballInfo
 //
 //  Created by Fathureza Januarza on 10/12/18.
@@ -9,12 +9,13 @@
 import Foundation
 import ObjectMapper
 
-struct SoccerTeam: Mappable {
+struct FootballTeam: Mappable {
 	
-	var formedYear: Int = 0
-	var stadiumName: Int = 0
+	var formedYear: String = ""
+	var stadiumName: String = ""
 	var teamDescription: String = ""
-	var teamLogoURL: URL? = nil
+	var teamLogoURL: String = ""
+	var teamName: String = ""
 
 	init?(map: Map) {
 		mapping(map: map)
@@ -26,5 +27,6 @@ struct SoccerTeam: Mappable {
 		stadiumName <- map["strStadium"]
 		teamDescription <- map["strDescriptionEN"]
 		teamLogoURL <- map["strTeamLogo"]
+		teamName <- map["strTeam"]
 	}
 }
