@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+protocol OptionalType {
+	
+	associatedtype Wrapped
+	
+	func map<U>(_ f: (Wrapped) throws -> U) rethrows -> U?
+}
+
+extension Optional: OptionalType {}
+
+extension OptionalType {
+	
+	/**
+	Proxy property to allow extensions use Optional normally.
+	*/
+	var optionalValue: Wrapped? {
+		
+		return self.map { (value: Wrapped) -> Wrapped in
+			return value
+		}
+	}
+}
