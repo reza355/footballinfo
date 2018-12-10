@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+
+final class TeamLogoCellViewModel {
+	
+	var logoURL = Variable<String>("")
+	
+	init(logoURL: String) {
+		self.logoURL.value = logoURL
+	}
+}

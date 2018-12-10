@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import SDWebImage
+import RxSwift
+import RxCocoa
 
-class TeamLogoCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+final class TeamLogoCell: UICollectionViewCell {
+	
+	@IBOutlet private var teamLogo: UIImageView!
+	
+	private var viewModel: TeamLogoCellViewModel?
+	private let disposeBag = DisposeBag()
+	
+	func bind(viewModel: TeamLogoCellViewModel) {
+		
+		self.viewModel = viewModel
+		showLogo(viewModel: viewModel)
+	}
+	
+	func showLogo(viewModel: TeamLogoCellViewModel) {
+		
+		viewModel.logoURL.asObservable()
+			.observeOn(MainScheduler.instance)
+			.subscribe(onNext: { [weak self] (logoURL: String) in
+				
+				let imageURL = URL(string: logoURL)
+				self?.teamLogo.sd_setImage(with: imageURL)
+			})
+			.disposed(by: disposeBag)
+	}
 }
