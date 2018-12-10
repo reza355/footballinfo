@@ -11,6 +11,7 @@
 		601CF6C821BE0CA100CAD5D3 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6C721BE0CA100CAD5D3 /* OptionalType.swift */; };
 		601CF6CA21BE1B8B00CAD5D3 /* TeamListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */; };
 		601CF6CC21BE1C5900CAD5D3 /* TeamListsCacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6CB21BE1C5900CAD5D3 /* TeamListsCacheModel.swift */; };
+		601CF6CE21BE381100CAD5D3 /* TeamLogoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF6CD21BE381100CAD5D3 /* TeamLogoCellViewModel.swift */; };
 		603A3AC721BBDA28000AC86D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 603A3AC621BBDA28000AC86D /* Result.framework */; };
 		603A3ACE21BBDE13000AC86D /* TeamListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A3ACC21BBDE13000AC86D /* TeamListsViewController.swift */; };
 		603A3ACF21BBDE13000AC86D /* TeamListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603A3ACD21BBDE13000AC86D /* TeamListsViewController.xib */; };
@@ -32,6 +33,11 @@
 		60D1B5F121BBD48A008110C5 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D1B5E521BBD489008110C5 /* ReactiveSwift.framework */; };
 		60D1B5F321BBD48A008110C5 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D1B5E721BBD489008110C5 /* Moya.framework */; };
 		60D1B5F421BBD48A008110C5 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D1B5E821BBD489008110C5 /* SVProgressHUD.framework */; };
+		60E7E03121BE4AEB002B7076 /* CollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03021BE4AEB002B7076 /* CollectionView+Register.swift */; };
+		60E7E03321BE4B2A002B7076 /* UIKit+Dequequreusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03221BE4B2A002B7076 /* UIKit+Dequequreusable.swift */; };
+		60E7E03621BE4BE8002B7076 /* Reuseidentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03521BE4BE8002B7076 /* Reuseidentifier.swift */; };
+		60E7E03A21BE4C68002B7076 /* TeamLogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7E03821BE4C68002B7076 /* TeamLogoCell.swift */; };
+		60E7E03B21BE4C68002B7076 /* TeamLogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,7 @@
 		601CF6C721BE0CA100CAD5D3 /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
 		601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsViewModel.swift; sourceTree = "<group>"; };
 		601CF6CB21BE1C5900CAD5D3 /* TeamListsCacheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsCacheModel.swift; sourceTree = "<group>"; };
+		601CF6CD21BE381100CAD5D3 /* TeamLogoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLogoCellViewModel.swift; sourceTree = "<group>"; };
 		603A3AC621BBDA28000AC86D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 		603A3ACC21BBDE13000AC86D /* TeamListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListsViewController.swift; sourceTree = "<group>"; };
 		603A3ACD21BBDE13000AC86D /* TeamListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamListsViewController.xib; sourceTree = "<group>"; };
@@ -62,6 +69,11 @@
 		60D1B5E521BBD489008110C5 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		60D1B5E721BBD489008110C5 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
 		60D1B5E821BBD489008110C5 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = SOURCE_ROOT; };
+		60E7E03021BE4AEB002B7076 /* CollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Register.swift"; sourceTree = "<group>"; };
+		60E7E03221BE4B2A002B7076 /* UIKit+Dequequreusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Dequequreusable.swift"; sourceTree = "<group>"; };
+		60E7E03521BE4BE8002B7076 /* Reuseidentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseidentifier.swift; sourceTree = "<group>"; };
+		60E7E03821BE4C68002B7076 /* TeamLogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLogoCell.swift; sourceTree = "<group>"; };
+		60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamLogoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 		603A3AC821BBDD13000AC86D /* TeamList */ = {
 			isa = PBXGroup;
 			children = (
+				60E7E03721BE4C33002B7076 /* Cells */,
 				603A3ADF21BC1C1A000AC86D /* Entities */,
 				603A3ACB21BBDD51000AC86D /* Models */,
 				603A3ACA21BBDD31000AC86D /* ViewModels */,
@@ -136,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				601CF6C921BE1B8B00CAD5D3 /* TeamListsViewModel.swift */,
+				601CF6CD21BE381100CAD5D3 /* TeamLogoCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -152,7 +166,6 @@
 		603A3AD021BC0777000AC86D /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
-				601CF6C521BE0C7C00CAD5D3 /* Foundation */,
 				603A3AD121BC078E000AC86D /* Extension */,
 			);
 			path = Reusables;
@@ -161,6 +174,9 @@
 		603A3AD121BC078E000AC86D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				60E7E03421BE4BD6002B7076 /* Protocols */,
+				60E7E02E21BE4AAB002B7076 /* UIKit */,
+				601CF6C521BE0C7C00CAD5D3 /* Foundation */,
 				601CF6C221BE0B3800CAD5D3 /* ObjectMapper */,
 				603A3AD221BC0794000AC86D /* Moya */,
 			);
@@ -264,6 +280,40 @@
 			path = CarthageFramework;
 			sourceTree = "<group>";
 		};
+		60E7E02E21BE4AAB002B7076 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E02F21BE4AD2002B7076 /* UICollectionView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		60E7E02F21BE4AD2002B7076 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E03021BE4AEB002B7076 /* CollectionView+Register.swift */,
+				60E7E03221BE4B2A002B7076 /* UIKit+Dequequreusable.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		60E7E03421BE4BD6002B7076 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E03521BE4BE8002B7076 /* Reuseidentifier.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		60E7E03721BE4C33002B7076 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60E7E03821BE4C68002B7076 /* TeamLogoCell.swift */,
+				60E7E03921BE4C68002B7076 /* TeamLogoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				609051CB21B6EB4B006E3F26 /* LaunchScreen.storyboard in Resources */,
+				60E7E03B21BE4C68002B7076 /* TeamLogoCell.xib in Resources */,
 				603A3ACF21BBDE13000AC86D /* TeamListsViewController.xib in Resources */,
 				609051C821B6EB4B006E3F26 /* Assets.xcassets in Resources */,
 			);
@@ -367,15 +418,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				601CF6CA21BE1B8B00CAD5D3 /* TeamListsViewModel.swift in Sources */,
+				60E7E03621BE4BE8002B7076 /* Reuseidentifier.swift in Sources */,
 				601CF6C421BE0B5900CAD5D3 /* Mappable + ServerResponse.swift in Sources */,
 				603A3AD421BC086A000AC86D /* RxMoya + Request.swift in Sources */,
 				609051C121B6EB49006E3F26 /* AppDelegate.swift in Sources */,
 				603A3ACE21BBDE13000AC86D /* TeamListsViewController.swift in Sources */,
 				601CF6CC21BE1C5900CAD5D3 /* TeamListsCacheModel.swift in Sources */,
 				60780E6221BE03B600902546 /* FootballTeam.swift in Sources */,
+				60E7E03121BE4AEB002B7076 /* CollectionView+Register.swift in Sources */,
 				601CF6C821BE0CA100CAD5D3 /* OptionalType.swift in Sources */,
+				60E7E03321BE4B2A002B7076 /* UIKit+Dequequreusable.swift in Sources */,
 				603A3ADA21BC1092000AC86D /* TeamListsMoyaTarget.swift in Sources */,
+				60E7E03A21BE4C68002B7076 /* TeamLogoCell.swift in Sources */,
 				603A3ADE21BC1B8B000AC86D /* TeamListsNetworkModel.swift in Sources */,
+				601CF6CE21BE381100CAD5D3 /* TeamLogoCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
