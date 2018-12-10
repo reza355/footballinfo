@@ -4,3 +4,4 @@ github "ReactiveX/RxSwift" ~> 4.0
 github "tristanhimmelman/ObjectMapper" ~> 3.4
 github "SDWebImage/SDWebImage"
 github "SVProgressHUD/SVProgressHUD"
+github "RxSwiftCommunity/RxFlow"
